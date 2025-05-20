@@ -1,0 +1,42 @@
+# hello.py
+# A fun Hello World program using different Python features
+
+def greet(message):
+    print(message)
+
+def repeat_greetings(count):
+    for _ in range(count):
+        greet("Hello, World!")
+
+def numbered_greetings(count):
+    for i in range(1, count + 1):
+        greet(f"{i}: Hello, World!")
+
+def greeting_list():
+    greetings = [
+        "Hello, World!",
+        "Hello, Universe!",
+        "Hello, Python!",
+        "Hello, GitHub!",
+        "Hello, Developer!"
+    ]
+    for g in greetings:
+        greet(g)
+
+def greet_with_conditions():
+    for i in range(1, 11):
+        if i % 2 == 0:
+            greet(f"{i}: Hello, Even World!")
+        else:
+            greet(f"{i}: Hello, Odd World!")
+
+def greet_custom(name):
+    greet(f"Hello, {name}!")
+
+def greet_multiple(names):
+    for name in names:
+        greet_custom(name)
+
+def main():
+    print("=== Simple Greetings ===")
+    repeat_greetings(_
